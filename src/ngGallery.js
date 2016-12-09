@@ -27,7 +27,8 @@
       preCloseCallback: false,
       url: false,
       infiniteLoop: false,
-      timing: false
+      timing: false,
+      visibleID: 0
     };
 
 
@@ -206,7 +207,7 @@
                 $dialogParent = $body;
               }
 
-              scope.visibleID = 0;
+              scope.visibleID = options.visibleID;
 
               scope.nextImage = function (byInterval) {
                   $timeout(function() {
